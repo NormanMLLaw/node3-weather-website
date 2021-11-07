@@ -16,7 +16,7 @@ const forecast = (longitude, latitude, callback) => {
         //         feelslike: body.current.feelslike,
         //         timezone_id: body.location.timezone_id,
         //   });
-             callback(undefined, body.current.weather_descriptions[0] + ' today, temperature is ' +body.current.temperature + '°C, feelslike ' + body.current.feelslike + '°C. Timezone ID is ' +  body.location.timezone_id);
+             callback(undefined, body.current.weather_descriptions[0] + ' today, temperature is ' +body.current.temperature + '°C, feelslike ' + body.current.feelslike + '°C. Humidity is ' + body.location.humidity + '. Timezone ID is ' +  body.location.timezone_id);
         }
     });
 }
